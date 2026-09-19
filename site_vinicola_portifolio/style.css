@@ -1,0 +1,369 @@
+/* Variáveis de Cores e Fontes */
+:root {
+    --color-wine: #3B0918;
+    --color-wine-light: #5C1026;
+    --color-gold: #C5A059;
+    --color-gold-hover: #E3B968;
+    --color-bg: #FDFBF7;
+    --color-text: #2C2C2C;
+    --color-text-light: #666666;
+    
+    --font-body: 'Montserrat', sans-serif;
+    --font-logo: 'Cinzel', serif;
+    --font-hero-title: 'Playfair Display', serif;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container Padrão */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho / Navbar */
+header {
+    background-color: var(--color-wine);
+    color: var(--color-bg);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.top-header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.sub-header {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 0;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--color-gold);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    /* Fundo simulando uma imagem escura de vinhedo com overlay */
+    background: linear-gradient(rgba(59, 9, 24, 0.8), rgba(59, 9, 24, 0.8)), url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    color: var(--color-bg);
+    padding-top: 150px; /* Compensa o header fixo */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: var(--font-hero-title);
+    font-weight: 400;
+    font-style: italic;
+    color: var(--color-gold);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 0 40px;
+    font-weight: 300;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-gold);
+    color: var(--color-wine);
+    padding: 15px 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color-gold-hover);
+    transform: translateY(-2px);
+}
+
+/* Seção Sobre Nós */
+.about {
+    padding: 100px 0;
+    background-color: var(--color-bg);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: var(--color-wine);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+}
+
+.about-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Seção Nossos Vinhos (Produtos) */
+.wines {
+    padding: 100px 0;
+    background-color: #F4EFEB;
+    text-align: center;
+}
+
+.wines h2 {
+    font-size: 2.5rem;
+    color: var(--color-wine);
+    margin-bottom: 50px;
+}
+
+.wine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.wine-card {
+    background: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.wine-card:hover {
+    transform: translateY(-10px);
+}
+
+.wine-icon {
+    font-size: 40px;
+    color: var(--color-wine);
+    margin-bottom: 20px;
+}
+
+.wine-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--color-wine);
+}
+
+.wine-card p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* Seção Feedbacks */
+.feedbacks {
+    padding: 100px 0;
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+.feedbacks h2 {
+    font-size: 2.5rem;
+    color: var(--color-wine);
+    margin-bottom: 50px;
+}
+
+.feedback-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.feedback-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--color-gold);
+}
+
+.feedback-card .stars {
+    color: var(--color-gold);
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.feedback-card blockquote {
+    font-style: italic;
+    color: var(--color-text-light);
+    margin-bottom: 20px;
+    border-left: 2px solid #eee;
+    padding-left: 15px;
+}
+
+.feedback-card cite {
+    font-weight: 600;
+    color: var(--color-wine);
+}
+
+/* Botão Flutuante WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--color-wine);
+    color: #fff;
+    padding: 60px 0 20px;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #888;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+}
+
+/* Animação de Fade-in */
+.fade-in-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sub-header {
+        display: none;
+    }
+    .hero {
+        padding-top: 110px;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+}

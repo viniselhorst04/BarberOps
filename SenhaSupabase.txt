@@ -1,0 +1,6 @@
+
+Senha DB OnHouse - supabase.com
+Senha Supabase
+V1n1c1us@2026
+
+postgresql://postgres:Laikaguapeca146!@db.urxwkfclieoblnohwuxl.supabase.co:5432/postgres

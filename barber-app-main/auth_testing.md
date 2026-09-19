@@ -1,0 +1,2 @@
+# Authentication testing notes
+Use the demo accounts in `/app/memory/test_credentials.md`. Login returns a Bearer token; send it in `Authorization` for protected endpoints. Test registration with each hair type, invalid password, duplicate email, client booking, and admin-only endpoint protection.

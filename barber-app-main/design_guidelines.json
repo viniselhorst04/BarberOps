@@ -1,0 +1,46 @@
+{
+  "project_name": "Barbearia Imperial - Full-Stack Management & Booking App",
+  "archetype": "Luxury / The Performance Pro Hybrid",
+  "color_palette": {
+    "primary": "#D4AF37",
+    "primary_hover": "#E5C158",
+    "background_dark": "#0A0A0A",
+    "surface_dark": "#141414",
+    "border_dark": "#262626",
+    "text_main": "#F5F5F7",
+    "text_muted": "#A1A1AA",
+    "accent_red": "#EF4444",
+    "accent_green": "#22C55E"
+  },
+  "typography": {
+    "heading_font": "Playfair Display, serif",
+    "body_font": "Plus Jakarta Sans, sans-serif"
+  },
+  "image_urls": [
+    {
+      "category": "Hero / Interior",
+      "url": "https://images.unsplash.com/photo-1773904215697-e6c21fc27ac2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBiYXJiZXIlMjBzaG9wJTIwaGFpcmN1dCUyMGJlYXJkJTIwZ3Jvb21pbmd8ZW58MHx8fHwxNzg3Njc0NTg1fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Luxurious barber chairs and sinks in a dimly lit salon"
+    },
+    {
+      "category": "Grooming & Tools",
+      "url": "https://images.unsplash.com/photo-1781633445990-6d6265cc8882?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxsdXh1cnklMjBiYXJiZXIlMjBzaG9wJTIwaGFpcmN1dCUyMGJlYXJkJTIwZ3Jvb21pbmd8ZW58MHx8fHwxNzg3Njc0NTg1fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Grooming tools: safety razors and shaving brushes"
+    },
+    {
+      "category": "Action / Haircut",
+      "url": "https://images.pexels.com/photos/5812313/pexels-photo-5812313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Barber grooming a client with precision in a contemporary barbershop setting"
+    }
+  ],
+  "features_implemented": [
+    "Full JWT Authentication with Demo Roles (Admin, Barber, Client)",
+    "Client Profile with mandatory Hair Type (Liso, Ondulado, Cacheado, Crespo)",
+    "Intelligent Appointment Slot Calculation based on barber schedule, existing bookings, and service duration",
+    "Hospitality Flow (Daily active courtesies like Coffee, Craft Beer, Water)",
+    "Smart Cross-Selling of Products mapped to Client Hair Type with bundle discount",
+    "Mercado Pago PIX Checkout simulation + Pay at Salon option",
+    "Virtual Loyalty Stamp Card (10 completed appointments = 50% off 11th)",
+    "Admin & Barber Management Dashboard (Schedule management, Exception CRUD, Services CRUD, Products CRUD & Stock, Courtesies activation, Financial Reports)"
+  ]
+}
